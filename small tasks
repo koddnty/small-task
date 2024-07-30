@@ -147,4 +147,97 @@
 //	return 0;
 //}
 
-/**/
+/*猜数字游戏---------------------------------*/
+/*001为学前尝试*/
+//int main() {
+//	int num = 35;
+//	int num_input;
+//	for (int i = 1;;i++)
+//	{
+//		if (i == 1)
+//		{
+//			printf("猜猜看这个数字（大于0，小于l00）是什么: )\n");
+//		}
+//		else 
+//		{
+//			printf("再猜一次吧:p\n");
+//		}
+//		scanf("%d", &num_input);
+//		if (num_input == num)
+//		{
+//			printf("猜对了喔，你真棒！\n");
+//			printf("你一共猜了%d次\n", i);
+//			break;
+//		}
+//		else if (num_input < num )
+//		{
+//			printf("猜小了啊，笨蛋\n");
+//		}
+//		else
+//		{
+//			printf("猜大了啊，笨蛋\n");
+//		}
+//	}
+//	return 0;
+//}
+/*0002学后实践版*/
+/*新：获得随机数*/
+//void game()
+//{
+//	int rand_num = (rand() % 100);//获取随机值0-100
+//	int input = 0;
+//	for (int i = 1; ; i++)
+//	{	
+//		printf("输入你猜的数字:\n");
+//		scanf("%d", &input);//用户输入
+//		if (input > rand_num)
+//		{
+//			printf("太大了，再试一次吧\n");
+//		}		
+//		else if (input == rand_num)
+//		{
+//			printf("刚刚好，你一共试了%d次\n",i);
+//			break;	
+//		}		
+//		else if (input < rand_num)
+//		{
+//			printf("太小了，再试一次吧\n");
+//		}
+//		else
+//		{
+//			printf("你打的什么玩意？\n");
+//		}
+//		//判断
+//	}
+//}
+//
+//void menu()
+//{
+//	printf("|+====================================+|\n");
+//	printf("|+============猜数字游戏==============+|\n");
+//	printf("|+====================================+|\n");
+//	printf("|+============ 1. play ===============+|\n");
+//	printf("|+============ 0. exit ===============+|\n");
+//	printf("|+====================================+|\n");
+//}
+//
+//int main() {
+//	srand((unsigned int)time(NULL));//获取时间戳并得到随机数
+//	menu();
+//	int userinput = 0;
+//	do {
+//		scanf("%d", &userinput);
+//		switch (userinput) 
+//		{
+//			case 1:
+//				game();
+//				break;
+//			case 0:
+//				break;
+//			default:
+//				break;
+//		}
+//	} while ( userinput !=0 || userinput != 1 );
+//	return 0;
+//}
+
