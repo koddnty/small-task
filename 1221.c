@@ -390,7 +390,7 @@
 //	return 0;
 //}
 
-/*自增函数*/
+/*自增函数-----------------------------------*/
 //void auto_add(int* i, int n)
 //{
 //	int sum = *i + n;
@@ -403,5 +403,32 @@
 //	int n = 10;
 //	auto_add(&i, n);
 //	printf("%d\n", i);
+//	return 0;
+//}
+//#include "add.h"
+//
+//#pragma comment (lib , "test.lib")
+//int main()
+//{
+//	int add(int x, int y);
+//	int c = add(10, 23);
+//	printf("%d\n",c);
+//	return 0;
+//}
+
+/*打印数字每一位*/
+//int main()
+//{
+//	int nu1m = 0;
+//	scanf("%d", &nu1m);/*
+//	char arr[] = { nu1m };
+//	int n = strlen(arr);
+//	printf("%d\n", n);*/
+//	for (int i = 1; i <= 100; i++)
+//	{
+//		int m = (nu1m % 10);
+//		nu1m = (nu1m / 10);
+//		printf("%d\t", m);
+//	}
 //	return 0;
 //}
