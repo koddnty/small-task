@@ -1,3 +1,2 @@
 ﻿  1221.c
-D:\user\learn\c\Try\1221.c(425,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   Try.vcxproj -> D:\user\learn\c\Try\x64\Debug\Try.exe

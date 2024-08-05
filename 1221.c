@@ -63,6 +63,7 @@
 //}
 
 /*n的阶乘------------------------------------*/
+/*001*/
 //int main() {
 //	int n = 0;
 //	int sum = 1;
@@ -74,6 +75,23 @@
 //		}
 //		printf("%d\n", sum);
 //	}
+//	return 0;
+//}
+/*002*/
+//int fact(int x, int y)
+//{
+//	if (y != 0)
+//	{
+//		y--;
+//		return x * fact(x, y);
+//	}
+//	else
+//		return 1;
+//}
+//
+//int main()
+//{
+//	printf("%d", fact(3, 4));
 //	return 0;
 //}
 
@@ -417,6 +435,7 @@
 //}
 
 /*打印数字每一位*/
+/*001*/
 //int main()
 //{
 //	int nu1m = 0;
@@ -430,5 +449,105 @@
 //		nu1m = (nu1m / 10);
 //		printf("%d\t", m);
 //	}
+//	return 0;
+//}
+/*002函数递归 假啊*/
+//void print(int x)
+//{
+//	if (x > 9)
+//	{
+//	printf("%d\t", (x % 10));
+//	x = x / 10;
+//	print(x);
+//	}
+//	else
+//	{
+//		printf("%d", x);
+//	}
+//}
+//
+//int main()
+//{
+//	int num;
+//	scanf("%d", &num);
+//	print(num);
+//	return 0;
+//}
+/*真递归*/
+//void print(int x)
+//{
+//	if (x > 9)
+//	{
+//		print( x / 10);
+//	}
+//	printf("%d\t",x % 10);
+//}
+//
+//int main()
+//{
+//	int num;
+//	scanf("%d", &num);
+//	print(num);
+//	return 0;
+//}
+
+/*求字符串长度*/
+//int stringlength(char* arr)
+//{
+//	if (*arr != '\0')
+//	{
+//		return 1 + stringlength(arr + 1);
+//	}
+//	else
+//	{
+//		return 0;
+//	}
+//}
+//
+//int main()
+//{
+//	char arr[] = "aaabv";
+//	printf("%d", stringlength(arr));
+//	return 0;
+//}
+
+/*斐波那契数列*/
+/*低效递归*/
+//int lfi(int x)
+//{
+//	if (x >= 3)
+//	{
+//		return lfi(x - 1) + lfi(x - 2);
+//	}
+//	else
+//	{
+//		return 1;
+//	}
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	printf("%d", lfi(n));
+//	return 0;
+//}
+/*循环实现 正 较高效*/
+//略...
+/*通项公式 ...*/
+
+/*汉诺塔*/
+//int toh(int x)
+//{
+//	if (x != 1)
+//		return (2 * (toh(x - 1)) + 1);
+//	else
+//		return 1;
+//}
+//
+//int main()
+//{
+//	int n = 10;
+//	printf("%d", toh(n));
 //	return 0;
 //}
